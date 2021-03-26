@@ -7,9 +7,9 @@ provider "aci" {
   url         = var.aciUrl
 }
 
-########################
-### CREATION TENANT ####
-########################
+#######################
+### CREATION TENANT ###
+#######################
 
 resource "aci_tenant" "demo" {
   name        = var.tenantName
@@ -158,4 +158,3 @@ resource "aci_filter_entry" "icmp" {
   prot      = "icmp"
   stateful  = "yes"
 }
-
