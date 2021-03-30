@@ -7,9 +7,9 @@ provider "aci" {
   url         = var.aciUrl
 }
 
-#######################
-### CREATION TENANT ###
-#######################
+########################
+### CREATION TENANT ####
+########################
 
 resource "aci_tenant" "demo" {
   name        = var.tenantName
